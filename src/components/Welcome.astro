@@ -1,14 +1,15 @@
 ---
-import astroLogo from '../assets/astro.svg';
-
+import CallToAction from './CallToAction.astro';
+import Offers from './Offers.astro'
+import Testimonial from './Testimonial.astro';
+import LoQueLograras from './LoQueLograras.astro';
 ---
 
-<div id="container">
-	<main>
-		<h1 class="bg-white">Fernanda LifeCoaching</h1>
-	</main>
-
-	
+<div id="container" class="bg-gradient-to-t from-stone-300 via-yellow-300 to-yellow-500">
+	<CallToAction/>
+	<Offers/> 
+	<LoQueLograras/>
+	<Testimonial/>
 </div>
 
 <style>
@@ -19,11 +20,11 @@ import astroLogo from '../assets/astro.svg';
 		width: 100%;
 		height: 100%;
 		z-index: -1;
-		filter: blur(100px);
 	}
 
 	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		
+		font-family: playfair display;
 		height: 100%;
 	}
 
@@ -32,6 +33,8 @@ import astroLogo from '../assets/astro.svg';
 		display: flex;
 		justify-content: center;
 	}
+
+	
 
 	#hero {
 		display: flex;
